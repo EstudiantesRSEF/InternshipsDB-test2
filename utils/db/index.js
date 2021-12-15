@@ -18,7 +18,7 @@ if (!admin.apps.length) {
   try {
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
-      databaseURL: 'https://rsef-test1.firebaseio.com/',
+      databaseURL: 'https://rsef-test2.firebaseio.com/',
     })
   } catch (error) {
     console.log('Firebase admin initialization error', error.stack)
