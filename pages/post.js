@@ -2,6 +2,7 @@
 Form to submit an internship to the DataBase
 */
 
+
 import {useState} from 'react'
 import {useRouter} from 'next/router'
 import axios from 'axios'
@@ -185,35 +186,6 @@ const Post = () => {
             </option>
           </Select>
         </FormControl>
-
-        /*
-        // Testing: Adding a Menu
-        <FormControl id="form test" isRequired mb={marginBetweenElements}>
-          <FormLabel>form test</FormLabel>
-        <Input id='email' type='email' />
-        <FormHelperText>We'll never share your email.</FormHelperText>
-        </FormControl>
-
-        <Menu closeOnSelect={false}>
-          <MenuButton as={Button} colorScheme='blue'>
-            MenuItem
-          </MenuButton>
-          <MenuList minWidth='240px'>
-            <MenuOptionGroup defaultValue='asc' title='Order' type='radio'>
-              <MenuItemOption value='asc'>Ascending</MenuItemOption>
-              <MenuItemOption value='desc'>Descending</MenuItemOption>
-            </MenuOptionGroup>
-            <MenuDivider />
-            <MenuOptionGroup title='Country' type='checkbox'>
-              <MenuItemOption value='email'>Email</MenuItemOption>
-              <MenuItemOption value='phone'>Phone</MenuItemOption>
-              <MenuItemOption value='country'>Country</MenuItemOption>
-            </MenuOptionGroup>
-          </MenuList>
-        </Menu>
-        */
-
-
         <FormControl id="location" isRequired mb={marginBetweenElements}>
           <FormLabel>Location</FormLabel>
           <Input
