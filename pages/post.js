@@ -182,8 +182,13 @@ const Post = () => {
             </option>
           </Select>
         </FormControl>
-        
-        <FormControl>
+
+        <FormControl id="form test" isRequired mb={marginBetweenElements}>
+          <FormLabel>form test</FormLabel>
+        <Input id='email' type='email' />
+        <FormHelperText>We'll never share your email.</FormHelperText>
+        </FormControl>
+        /*
         <Menu closeOnSelect={false}>
           <MenuButton as={Button} colorScheme='blue'>
             MenuItem
@@ -201,7 +206,8 @@ const Post = () => {
             </MenuOptionGroup>
           </MenuList>
         </Menu>
-        </FormControl>
+        */
+
 
         <FormControl id="location" isRequired mb={marginBetweenElements}>
           <FormLabel>Location</FormLabel>
