@@ -177,6 +177,9 @@ const Post = () => {
             <option value="Interdisciplinary Physics">
               Interdisciplinary Physics
             </option>
+            <option value="Nanophysics">
+              Nanophysics
+            </option>
           </Select>
         </FormControl>
         <FormControl id="location" isRequired mb={marginBetweenElements}>
