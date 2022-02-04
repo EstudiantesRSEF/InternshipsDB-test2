@@ -1,3 +1,7 @@
+/*
+Success page shjown when the internshi submit is done
+*/
+
 import React from 'react'
 import {Heading, Box, Stack, Text} from '@chakra-ui/react'
 import {Container} from '../components'
