@@ -72,13 +72,12 @@ const Post = () => {
           Submit a new internship to our database
         </Heading>
         <FormControl id="cbox" isRequired mb={marginBetweenElements} as='fieldset'>
-          <FormLabel as="legend">CheckboxGroup test</FormLabel>
+          <FormLabel as="legend">Education level with checkbox</FormLabel>
           <CheckboxGroup onChange={onChangeCBOX} variant="filled">
             <HStack spacing="24px">
-              <Checkbox type="text" name="cbox" value="Valor1">Valor1</Checkbox>
-              <Checkbox type="text" name="cbox" value="Valor2">Valor2</Checkbox>
-              <Checkbox type="text" name="cbox" value="Valor3">Valor3</Checkbox>
-              <Checkbox type="text" name="cbox" value="Valor4">Valor4</Checkbox>
+              <Checkbox type="text" name="cbox" value="Bachelor">Valor1</Checkbox>
+              <Checkbox type="text" name="cbox" value="Master">Valor2</Checkbox>
+              <Checkbox type="text" name="cbox" value="PhD">Valor3</Checkbox>
             </HStack>
           </CheckboxGroup>
         </FormControl>
