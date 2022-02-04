@@ -80,9 +80,9 @@ const Post = () => {
           <FormLabel as="legend">Education level with checkbox</FormLabel>
           <CheckboxGroup onChange={onChangeCBOX} variant="filled">
             <HStack spacing="24px">
-              <Checkbox type="text" name="cbox" value="Bachelor">Valor1</Checkbox>
-              <Checkbox type="text" name="cbox" value="Master">Valor2</Checkbox>
-              <Checkbox type="text" name="cbox" value="PhD">Valor3</Checkbox>
+              <Checkbox type="text" name="cbox" value="Bachelor">Bachelor</Checkbox>
+              <Checkbox type="text" name="cbox" value="Master">Master</Checkbox>
+              <Checkbox type="text" name="cbox" value="PhD">PhD</Checkbox>
             </HStack>
           </CheckboxGroup>
         </FormControl>
@@ -117,6 +117,13 @@ const Post = () => {
         </FormControl>
         <FormControl id="educationLevel" isRequired mb={marginBetweenElements}>
           <FormLabel>Education level</FormLabel>
+          <CheckboxGroup onChange={onChangeCBOX} variant="filled">
+            <HStack spacing="24px">
+              <Checkbox type="text" name="cbox" value="Bachelor">Bachelor</Checkbox>
+              <Checkbox type="text" name="cbox" value="Master">Master</Checkbox>
+              <Checkbox type="text" name="cbox" value="PhD">PhD</Checkbox>
+            </HStack>
+          </CheckboxGroup>
           <Select
             name="educationLevel"
             onChange={onChange}
