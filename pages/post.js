@@ -83,7 +83,7 @@ const Post = () => {
         </FormControl>
         <FormControl id="premium" isRequired mb={marginBetweenElements}>
           <FormLabel>Premium Opportunity</FormLabel>
-          <Checkbox type="text" name="premium" value="false" onChange={onChange} variant="filled">Simple Checkbox Dominated!</Checkbox>
+          <Checkbox type="text" name="premium" value="false" onChange={onChange} variant="filled">I want my oportunity to be shown on the top</Checkbox>
         </FormControl>
         <FormControl id="title" isRequired mb={marginBetweenElements}>
           <FormLabel>Opportunity's title</FormLabel>
