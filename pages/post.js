@@ -124,6 +124,7 @@ const Post = () => {
               <Checkbox type="text" name="cbox" value="PhD">PhD</Checkbox>
             </HStack>
           </CheckboxGroup>
+          /*
           <Select
             name="educationLevel"
             onChange={onChange}
@@ -134,6 +135,7 @@ const Post = () => {
             <option value="Masters">Masters</option>
             <option value="PhD">PhD</option>
           </Select>
+          */
         </FormControl>
         <FormControl id="modality" isRequired mb={marginBetweenElements}>
           <FormLabel>Modality</FormLabel>
