@@ -80,7 +80,7 @@ const Post = () => {
 
         <FormControl id="premium" isRequired mb={marginBetweenElements}>
           <FormLabel>Premium Opportunity</FormLabel>
-          <Checkbox type="text" name="premium" value="false" onChange={onChange} variant="filled">I want my oportunity to be shown on the top</Checkbox>
+          <Checkbox type="text" name="premium" value="false" onChange={onChange} variant="filled">I want my oportunity to be highlighted</Checkbox>
         </FormControl>
 
 
