@@ -182,6 +182,7 @@ const Post = () => {
             </option>
           </Select>
 
+          <FormControl>
           <Menu closeOnSelect={false}>
             <MenuButton as={Button} colorScheme='blue'>
               MenuItem
@@ -199,6 +200,8 @@ const Post = () => {
               </MenuOptionGroup>
             </MenuList>
           </Menu>
+          </FormControl>
+
 
         </FormControl>
         <FormControl id="location" isRequired mb={marginBetweenElements}>
