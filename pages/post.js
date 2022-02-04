@@ -181,6 +181,25 @@ const Post = () => {
               Nanophysics
             </option>
           </Select>
+
+          <Menu closeOnSelect={false}>
+            <MenuButton as={Button} colorScheme='blue'>
+              MenuItem
+            </MenuButton>
+            <MenuList minWidth='240px'>
+              <MenuOptionGroup defaultValue='asc' title='Order' type='radio'>
+                <MenuItemOption value='asc'>Ascending</MenuItemOption>
+                <MenuItemOption value='desc'>Descending</MenuItemOption>
+              </MenuOptionGroup>
+              <MenuDivider />
+              <MenuOptionGroup title='Country' type='checkbox'>
+                <MenuItemOption value='email'>Email</MenuItemOption>
+                <MenuItemOption value='phone'>Phone</MenuItemOption>
+                <MenuItemOption value='country'>Country</MenuItemOption>
+              </MenuOptionGroup>
+            </MenuList>
+          </Menu>
+
         </FormControl>
         <FormControl id="location" isRequired mb={marginBetweenElements}>
           <FormLabel>Location</FormLabel>
