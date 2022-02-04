@@ -73,6 +73,7 @@ const Post = () => {
   return (
     <Container>
       <Box my={10} bgColor="white" p={6} borderRadius="md">
+        // Encabezado
         <Heading mt={5} mb={7}>
           Submit a new internship to our database
         </Heading>
@@ -86,10 +87,14 @@ const Post = () => {
             //</HStack>
           //</CheckboxGroup>
         //</FormControl>
+
+        // Premium Oportunity
         <FormControl id="premium" isRequired mb={marginBetweenElements}>
           <FormLabel>Premium Opportunity</FormLabel>
           <Checkbox type="text" name="premium" value="false" onChange={onChange} variant="filled">I want my oportunity to be shown on the top</Checkbox>
         </FormControl>
+
+        // Opportunity's title
         <FormControl id="title" isRequired mb={marginBetweenElements}>
           <FormLabel>Opportunity's title</FormLabel>
           <Input
@@ -101,6 +106,8 @@ const Post = () => {
             variant="filled"
           />
         </FormControl>
+
+        // Description
         <FormControl id="description" isRequired mb={marginBetweenElements}>
           <FormLabel>Short description</FormLabel>
           <Textarea
@@ -115,6 +122,8 @@ const Post = () => {
             The description needs to be of at least 180 characters.
           </FormHelperText>
         </FormControl>
+
+        // Education level
         <FormControl id="educationLevel" isRequired mb={marginBetweenElements}>
           <FormLabel>Education level</FormLabel>
           <CheckboxGroup onChange={onChangeCBOX} variant="filled">
@@ -124,8 +133,7 @@ const Post = () => {
               <Checkbox type="text" name="cbox" value="PhD">PhD</Checkbox>
             </HStack>
           </CheckboxGroup>
-          /*
-          <Select
+          /*<Select
             name="educationLevel"
             onChange={onChange}
             placeholder="Relevant education level"
@@ -134,8 +142,9 @@ const Post = () => {
             <option value="Bachelors">Bachelors</option>
             <option value="Masters">Masters</option>
             <option value="PhD">PhD</option>
-          </Select>
-          */
+          </Select>*/
+
+        // Modality
         </FormControl>
         <FormControl id="modality" isRequired mb={marginBetweenElements}>
           <FormLabel>Modality</FormLabel>
@@ -150,6 +159,8 @@ const Post = () => {
             <option value="Computational">Computational</option>
           </Select>
         </FormControl>
+
+        // Discipline
         <FormControl id="discipline" isRequired mb={marginBetweenElements}>
           <FormLabel>Discipline</FormLabel>
           <Select
@@ -195,6 +206,8 @@ const Post = () => {
             </option>
           </Select>
         </FormControl>
+
+        // Location
         <FormControl id="location" isRequired mb={marginBetweenElements}>
           <FormLabel>Location</FormLabel>
           <Input
@@ -209,6 +222,8 @@ const Post = () => {
             If there is more than one you can separate them by commas
           </FormHelperText>
         </FormControl>
+
+        // Allowance
         <FormControl id="hasAllowance" isRequired mb={marginBetweenElements}>
           <FormLabel>Allowance</FormLabel>
           <Select
@@ -251,6 +266,8 @@ const Post = () => {
             </InputGroup>
           </FormControl>
         )}
+
+        // Language
         <FormControl id="language" isRequired mb={marginBetweenElements}>
           <FormLabel>Required languages</FormLabel>
           <Input
@@ -265,6 +282,8 @@ const Post = () => {
             If there is more than one you can separate them by commas
           </FormHelperText>
         </FormControl>
+
+        // Duration
         <FormControl id="duration" isRequired mb={marginBetweenElements}>
           <FormLabel>Duration</FormLabel>
           <Select
@@ -279,6 +298,8 @@ const Post = () => {
             </option>
           </Select>
         </FormControl>
+
+        // Season
         <FormControl id="season" isRequired mb={marginBetweenElements}>
           <FormLabel>Season</FormLabel>
           <Select
@@ -293,6 +314,8 @@ const Post = () => {
             </option>
           </Select>
         </FormControl>
+
+        // Start Date
         <FormControl id="startDate" isRequired mb={marginBetweenElements}>
           <FormLabel>Opening date</FormLabel>
           <Input
@@ -315,6 +338,8 @@ const Post = () => {
             variant="filled"
           />
         </FormControl>
+
+        // URL
         <FormControl id="url" isRequired mb={marginBetweenElements}>
           <FormLabel>
             Link to more information and or application form
@@ -328,6 +353,8 @@ const Post = () => {
             variant="filled"
           />
         </FormControl>
+
+        // Promotional Image
         <FormControl
           id="promotionalImage"
           isRequired
