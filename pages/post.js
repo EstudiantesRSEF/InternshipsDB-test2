@@ -78,7 +78,7 @@ const Post = () => {
           Submit a new internship to our database
         </Heading>
 
-        <FormControl id="premium" isRequired mb={marginBetweenElements}>
+        <FormControl id="premium" mb={marginBetweenElements}>
           <FormLabel>Premium Opportunity</FormLabel>
           <Checkbox type="text" name="premium" value="false" onChange={onChange} variant="filled">I want my oportunity to be highlighted</Checkbox>
         </FormControl>
