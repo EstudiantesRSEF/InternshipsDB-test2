@@ -76,7 +76,7 @@ const Post = () => {
         <Heading mt={5} mb={7}>
           Submit a new internship to our database
         </Heading>
-        <FormControl id="cbox" isRequired mb={marginBetweenElements} as='fieldset'>
+        //<FormControl id="cbox" isRequired mb={marginBetweenElements} as='fieldset'>
           //<FormLabel as="legend">Education level with checkbox</FormLabel>
           //<CheckboxGroup onChange={onChangeCBOX} variant="filled">
             //<HStack spacing="24px">
@@ -85,7 +85,7 @@ const Post = () => {
               //<Checkbox type="text" name="cbox" value="PhD">PhD</Checkbox>
             //</HStack>
           //</CheckboxGroup>
-        </FormControl>
+        //</FormControl>
         <FormControl id="premium" isRequired mb={marginBetweenElements}>
           <FormLabel>Premium Opportunity</FormLabel>
           <Checkbox type="text" name="premium" value="false" onChange={onChange} variant="filled">I want my oportunity to be shown on the top</Checkbox>
