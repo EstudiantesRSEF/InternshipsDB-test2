@@ -107,7 +107,7 @@ const Post = () => {
           />
         </FormControl>
 
-        // Description
+        <!-- Description -->
         <FormControl id="description" isRequired mb={marginBetweenElements}>
           <FormLabel>Short description</FormLabel>
           <Textarea
