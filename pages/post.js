@@ -36,7 +36,7 @@ const Post = () => {
     modality: '',
     discipline: '',
     hasAllowance: '',
-    allowanceAmount: '',
+    allowanceAmount: null,
     language: '',
     duration: '',
     season: '',
