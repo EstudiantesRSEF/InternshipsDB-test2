@@ -355,9 +355,11 @@ const Post = () => {
             provide one, a generic template will be used for this purposes.
           </FormHelperText>
         </FormControl>
+
         <Button disabled={validate()} onClick={onSubmit} mt={5}>
           Submit internship
         </Button>
+
       </Box>
     </Container>
   )
