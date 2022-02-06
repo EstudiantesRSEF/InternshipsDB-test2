@@ -24,6 +24,7 @@ import {
   HStack,
 } from '@chakra-ui/react'
 import {Container} from '../components'
+import Button from '@mui/material/Button'
 
 const Post = () => {
   const router = useRouter()
