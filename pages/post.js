@@ -14,17 +14,12 @@ import {
   Select,
   InputGroup,
   InputLeftElement,
-  Checkbox,
-  CheckboxGroup,
-  HStack,
 } from '@chakra-ui/react'
 import {Container} from '../components'
 
 const Post = () => {
   const router = useRouter()
   const [content, setContent] = useState({
-    cbox:'',
-    premium:'',
     title: '',
     description: '',
     educationLevel: '',
