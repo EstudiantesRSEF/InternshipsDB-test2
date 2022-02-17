@@ -2,7 +2,6 @@
 Form to submit an internship to the DataBase
 */
 
-
 import {useState} from 'react'
 import {useRouter} from 'next/router'
 import axios from 'axios'
@@ -117,9 +116,9 @@ const Post = () => {
           <FormLabel>Education level</FormLabel>
           <CheckboxGroup onChange={onChangeCBOX} variant="filled">
             <HStack spacing="24px">
-              <Checkbox type="text" name="cbox" value="Bachelor">Bachelor</Checkbox>
-              <Checkbox type="text" name="cbox" value="Master">Master</Checkbox>
-              <Checkbox type="text" name="cbox" value="PhD">PhD</Checkbox>
+              <Checkbox type="text" name="cbox1" value="Bachelor">Bachelor</Checkbox>
+              <Checkbox type="text" name="cbox2" value="Master">Master</Checkbox>
+              <Checkbox type="text" name="cbox3" value="PhD">PhD</Checkbox>
             </HStack>
           </CheckboxGroup>
 
