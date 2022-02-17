@@ -14,12 +14,17 @@ import {
   Select,
   InputGroup,
   InputLeftElement,
+  Checkbox,
+  CheckboxGroup,
+  HStack,
 } from '@chakra-ui/react'
 import {Container} from '../components'
 
 const Post = () => {
   const router = useRouter()
   const [content, setContent] = useState({
+    cbox:'',
+    premium:'',
     title: '',
     description: '',
     educationLevel: '',
@@ -61,14 +66,29 @@ const Post = () => {
         <Heading mt={5} mb={7}>
           Submit a new internship to our database
         </Heading>
+        <FormControl id="cbox" isRequired mb={marginBetweenElements} as='fieldset'>
+          <FormLabel as="legend">CheckboxGroup test</FormLabel>
+          <CheckboxGroup onChange={onChange} variant="filled">
+            <HStack spacing="24px">
+              <Checkbox type="text" name="cbox" value="Valor1">Valor1</Checkbox>
+              <Checkbox type="text" name="cbox" value="Valor2">Valor2</Checkbox>
+              <Checkbox type="text" name="cbox" value="Valor3">Valor3</Checkbox>
+              <Checkbox type="text" name="cbox" value="Valor4">Valor4</Checkbox>
+            </HStack>
+          </CheckboxGroup>
+        </FormControl>
+        <FormControl id="premium" isRequired mb={marginBetweenElements}>
+          <FormLabel>Premium Opportunity Checkbox test</FormLabel>
+          <Checkbox type="text" name="premium" value="false" onChange={onChange} variant="filled">Simple Checkbox Dominated!</Checkbox>
+        </FormControl>
         <FormControl id="title" isRequired mb={marginBetweenElements}>
-          <FormLabel>Opportunitie's title</FormLabel>
+          <FormLabel>Opportunity's title</FormLabel>
           <Input
             type="text"
             name="title"
             value={content.title}
             onChange={onChange}
-            placeholder="ESA Young Minds Internship"
+            placeholder="RSEF Summer Fellows Internship"
             variant="filled"
           />
         </FormControl>
