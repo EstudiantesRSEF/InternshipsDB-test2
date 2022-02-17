@@ -18,17 +18,12 @@ import {
   Select,
   InputGroup,
   InputLeftElement,
-  Checkbox,
-  CheckboxGroup,
-  HStack,
 } from '@chakra-ui/react'
 import {Container} from '../components'
 
 const Post = () => {
   const router = useRouter()
   const [content, setContent] = useState({
-    cbox:'',
-    premium:'',
     title: '',
     description: '',
     educationLevel: '',
@@ -50,11 +45,6 @@ const Post = () => {
     setContent(prevState => ({...prevState, [name]: value}))
   }
 
-  const onChangeCBOX = e => {
-    const {value, name} = e.target
-    setContent(prevState => ({...prevState, value}))
-  }
-
   const onSubmit = async () => {
     await axios.post('/api/entry', content)
     router.push('/success')
@@ -72,30 +62,20 @@ const Post = () => {
   return (
     <Container>
       <Box my={10} bgColor="white" p={6} borderRadius="md">
-
         <Heading mt={5} mb={7}>
           Submit a new internship to our database
         </Heading>
-
-        <FormControl id="premium" mb={marginBetweenElements}>
-          <FormLabel>Premium Opportunity</FormLabel>
-          <Checkbox type="text" name="premium" value="false" onChange={onChange} variant="filled">I want my oportunity to be highlighted</Checkbox>
-        </FormControl>
-
-
         <FormControl id="title" isRequired mb={marginBetweenElements}>
-          <FormLabel>Opportunity's title</FormLabel>
+          <FormLabel>Opportunitie's title</FormLabel>
           <Input
             type="text"
             name="title"
             value={content.title}
             onChange={onChange}
-            placeholder="RSEF Summer Fellows Internship"
+            placeholder="ESA Young Minds Internship"
             variant="filled"
           />
         </FormControl>
-
-
         <FormControl id="description" isRequired mb={marginBetweenElements}>
           <FormLabel>Short description</FormLabel>
           <Textarea
@@ -110,8 +90,6 @@ const Post = () => {
             The description needs to be of at least 180 characters.
           </FormHelperText>
         </FormControl>
-
-
         <FormControl id="educationLevel" isRequired mb={marginBetweenElements}>
           <FormLabel>Education level</FormLabel>
           <CheckboxGroup onChange={onChangeCBOX} variant="filled">
@@ -137,8 +115,6 @@ const Post = () => {
             <option value="Computational">Computational</option>
           </Select>
         </FormControl>
-
-
         <FormControl id="discipline" isRequired mb={marginBetweenElements}>
           <FormLabel>Discipline</FormLabel>
           <Select
@@ -179,13 +155,8 @@ const Post = () => {
             <option value="Interdisciplinary Physics">
               Interdisciplinary Physics
             </option>
-            <option value="Nanophysics">
-              Nanophysics
-            </option>
           </Select>
         </FormControl>
-
-
         <FormControl id="location" isRequired mb={marginBetweenElements}>
           <FormLabel>Location</FormLabel>
           <Input
@@ -200,8 +171,6 @@ const Post = () => {
             If there is more than one you can separate them by commas
           </FormHelperText>
         </FormControl>
-
-
         <FormControl id="hasAllowance" isRequired mb={marginBetweenElements}>
           <FormLabel>Allowance</FormLabel>
           <Select
@@ -244,8 +213,6 @@ const Post = () => {
             </InputGroup>
           </FormControl>
         )}
-
-
         <FormControl id="language" isRequired mb={marginBetweenElements}>
           <FormLabel>Required languages</FormLabel>
           <Input
@@ -260,8 +227,6 @@ const Post = () => {
             If there is more than one you can separate them by commas
           </FormHelperText>
         </FormControl>
-
-
         <FormControl id="duration" isRequired mb={marginBetweenElements}>
           <FormLabel>Duration</FormLabel>
           <Select
@@ -276,8 +241,6 @@ const Post = () => {
             </option>
           </Select>
         </FormControl>
-
-
         <FormControl id="season" isRequired mb={marginBetweenElements}>
           <FormLabel>Season</FormLabel>
           <Select
@@ -292,8 +255,6 @@ const Post = () => {
             </option>
           </Select>
         </FormControl>
-
-
         <FormControl id="startDate" isRequired mb={marginBetweenElements}>
           <FormLabel>Opening date</FormLabel>
           <Input
@@ -316,8 +277,6 @@ const Post = () => {
             variant="filled"
           />
         </FormControl>
-
-
         <FormControl id="url" isRequired mb={marginBetweenElements}>
           <FormLabel>
             Link to more information and or application form
@@ -331,8 +290,6 @@ const Post = () => {
             variant="filled"
           />
         </FormControl>
-
-
         <FormControl
           id="promotionalImage"
           isRequired
@@ -354,11 +311,9 @@ const Post = () => {
             provide one, a generic template will be used for this purposes.
           </FormHelperText>
         </FormControl>
-
         <Button disabled={validate()} onClick={onSubmit} mt={5}>
           Submit internship
         </Button>
-
       </Box>
     </Container>
   )
